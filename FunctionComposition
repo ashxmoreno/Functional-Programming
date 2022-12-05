@@ -1,0 +1,10 @@
+#Function composition: función dentro de otra función
+
+def add5(x):  
+    return x + 5
+
+def double(x):
+    return x * 2
+
+add5AndDoubleIt = lambda x: double(add5(x))
+print(add5AndDoubleIt(2))
